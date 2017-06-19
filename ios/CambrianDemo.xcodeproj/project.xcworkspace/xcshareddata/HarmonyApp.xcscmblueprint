@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C63A7DEC906A860947A3A3979E81CD80C1918933",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C63A7DEC906A860947A3A3979E81CD80C1918933" : 0,
+    "C63116EC57C58DE0419A43F9413CB55989FCC336" : 9223372036854775807,
+    "C3339A4E47BD5CBC797FF900B8CB1DC8A0F9DDF0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "69D62562-0AB4-4F8D-883E-1D7FCC542D7B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C63A7DEC906A860947A3A3979E81CD80C1918933" : "common-core\/",
+    "C63116EC57C58DE0419A43F9413CB55989FCC336" : "common-core\/third-party\/bgfx\/src\/bgfx\/",
+    "C3339A4E47BD5CBC797FF900B8CB1DC8A0F9DDF0" : "common-core\/third-party\/ogles\/src\/ogles\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HarmonyApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cambrian-ios\/HarmonyApp\/HarmonyApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CambrianTech\/ogles_gpgpu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3339A4E47BD5CBC797FF900B8CB1DC8A0F9DDF0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CambrianTech\/bgfx",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C63116EC57C58DE0419A43F9413CB55989FCC336"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cambriantech\/common-core.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C63A7DEC906A860947A3A3979E81CD80C1918933"
+    }
+  ]
+}

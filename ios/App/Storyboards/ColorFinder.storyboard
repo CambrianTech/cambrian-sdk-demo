@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZBs-vu-JDF">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Finder View Controller-->
+        <scene sceneID="zqn-Zj-anE">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZBs-vu-JDF" customClass="ColorFinderViewController" customModule="CambrianDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="04U-ad-zoK"/>
+                        <viewControllerLayoutGuide type="bottom" id="YqL-Ck-agP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xaC-Ze-tVr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idc-Tg-7ka" customClass="CBColorFinderView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go4-s7-HoR" customClass="RoundButton" customModule="CambrianDemo" customModuleProvider="target">
+                                <rect key="frame" x="171" y="574" width="72" height="72"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="AS0-tP-w7L"/>
+                                    <constraint firstAttribute="width" constant="72" id="cY4-35-hpy"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_camera"/>
+                                <connections>
+                                    <action selector="playPausePressed:" destination="ZBs-vu-JDF" eventType="touchUpInside" id="K6M-oc-uuL"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFM-8H-uMF">
+                                <rect key="frame" x="0.0" y="656" width="414" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="K2X-1M-PSl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Idc-Tg-7ka" firstAttribute="centerX" secondItem="xaC-Ze-tVr" secondAttribute="centerX" id="61M-hP-hp7"/>
+                            <constraint firstItem="YFM-8H-uMF" firstAttribute="centerX" secondItem="xaC-Ze-tVr" secondAttribute="centerX" id="Kzw-3M-aCO"/>
+                            <constraint firstItem="Idc-Tg-7ka" firstAttribute="width" secondItem="xaC-Ze-tVr" secondAttribute="width" id="LX6-h9-QfX"/>
+                            <constraint firstItem="Go4-s7-HoR" firstAttribute="centerX" secondItem="xaC-Ze-tVr" secondAttribute="centerX" id="Njd-UD-V9r"/>
+                            <constraint firstItem="Idc-Tg-7ka" firstAttribute="centerY" secondItem="xaC-Ze-tVr" secondAttribute="centerY" id="Vgo-hF-Mqr"/>
+                            <constraint firstItem="Go4-s7-HoR" firstAttribute="bottom" secondItem="YFM-8H-uMF" secondAttribute="top" constant="-10" id="Z3p-iU-mXQ"/>
+                            <constraint firstItem="Idc-Tg-7ka" firstAttribute="height" secondItem="xaC-Ze-tVr" secondAttribute="height" id="c7X-eo-Etl"/>
+                            <constraint firstItem="YqL-Ck-agP" firstAttribute="top" secondItem="YFM-8H-uMF" secondAttribute="bottom" id="gqm-a9-FcB"/>
+                            <constraint firstItem="YFM-8H-uMF" firstAttribute="width" secondItem="xaC-Ze-tVr" secondAttribute="width" id="hHF-8i-npz"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="colorFinderView" destination="Idc-Tg-7ka" id="wdn-Wq-y4l"/>
+                        <outlet property="colorList" destination="YFM-8H-uMF" id="mta-GS-ueR"/>
+                        <outlet property="playPauseButton" destination="Go4-s7-HoR" id="Xs3-kb-EGZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3E-y5-oyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="-119.1904047976012"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_camera" width="50" height="50"/>
+    </resources>
+</document>

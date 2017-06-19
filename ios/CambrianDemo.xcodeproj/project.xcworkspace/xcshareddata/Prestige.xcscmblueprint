@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C63A7DEC906A860947A3A3979E81CD80C1918933",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C63A7DEC906A860947A3A3979E81CD80C1918933" : 0,
+    "C63116EC57C58DE0419A43F9413CB55989FCC336" : 9223372036854775807,
+    "5CE487ABE1A3D760EE5EEF6D63A8427090FB766A" : 9223372036854775807,
+    "C3339A4E47BD5CBC797FF900B8CB1DC8A0F9DDF0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2E9173DE-2A83-4275-96BA-6633D539FD75",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C63A7DEC906A860947A3A3979E81CD80C1918933" : "common-core\/",
+    "C63116EC57C58DE0419A43F9413CB55989FCC336" : "common-core\/third-party\/bgfx\/src\/bgfx\/",
+    "5CE487ABE1A3D760EE5EEF6D63A8427090FB766A" : "common-core\/third-party\/bgfx\/src\/bx\/",
+    "C3339A4E47BD5CBC797FF900B8CB1DC8A0F9DDF0" : "common-core\/third-party\/ogles\/src\/ogles\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Prestige",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cambrian-ios\/HomeHarmony\/Prestige.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CambrianTech\/bx",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CE487ABE1A3D760EE5EEF6D63A8427090FB766A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CambrianTech\/ogles_gpgpu",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3339A4E47BD5CBC797FF900B8CB1DC8A0F9DDF0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CambrianTech\/bgfx",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C63116EC57C58DE0419A43F9413CB55989FCC336"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CambrianTech\/common-core",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C63A7DEC906A860947A3A3979E81CD80C1918933"
+    }
+  ]
+}

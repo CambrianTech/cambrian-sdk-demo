@@ -1,0 +1,85 @@
+#####################
+##   MacOS Files   ##
+#####################
+
+*.DS_Store
+
+
+####################
+##  Gradle Files  ##
+####################
+
+.gradle/
+gradlew
+*.bat
+build/
+local.properties
+wrapper/
+
+
+###################
+##  Realm Files  ##
+###################
+
+*.realm.lock
+*.realm.management
+
+
+
+######################
+##  IntelliJ Files  ##
+######################
+
+.idea/
+*.iml
+obj/*
+
+
+
+#####################
+## Generated Files ##
+#####################
+
+*.o
+*.d
+*.apk
+*.exe
+Pods/
+Podfile.lock
+*.lock
+
+
+
+#####################
+##   XCode Files   ##
+#####################
+
+*.xcuserstate
+*.xcbkptlist
+*.xcuser*\
+xcuserdata/
+*.pbxproj -crlf -diff -merge
+*.xccheckout
+.buildpath
+xcuserdata/*
+xcuserdata
+xcschememanagement.plist
+
+
+
+#####################
+##   CMake Files   ##
+#####################
+
+/Makefile
+CMakeFiles
+CMakeCache.txt
+/cmake_install.cmake
+/CambrianSDK
+gdbserver
+gdb.setup
+CMakeFiles/*
+lock.mdb
+data.mdb
+*.mdb
+

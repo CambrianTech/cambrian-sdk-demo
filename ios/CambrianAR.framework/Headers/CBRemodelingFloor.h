@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface CBRemodelingFloor : CBAugmentedAsset
 
-@property (nonatomic, assign) float scale;
-@property (nonatomic, strong, nonnull) NSString* path;
+- (void)setPath:(NSString *) path scale:(float)scale;
 
 @end
 

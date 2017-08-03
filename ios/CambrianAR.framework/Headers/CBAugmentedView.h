@@ -14,6 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface CBAugmentedView : UIView
 
 @property (nonatomic, strong, nullable) CBAugmentedScene *scene;
@@ -21,9 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CBToolMode toolMode;
 
 @property (nonatomic, readonly) BOOL isLive;
-@property (nonatomic, strong) dispatch_queue_t cb_queue;
-
-+ (CBAugmentedView *) getInstance;
 
 - (void) captureCurrentState;
 
@@ -31,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL) stopRunning;
 
 - (void) clearAll;
+
+- (void) pause:(BOOL)pause;
 
 @property (nonatomic, readonly) int undoSize;
 - (void) undo;

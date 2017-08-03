@@ -25,6 +25,7 @@ FOUNDATION_EXPORT const unsigned char HomeAugmentationVersionString[];
 
 //AR base objects
 #import <CambrianAR/CBAugmentedTypes.h>
+#import <CambrianAR/CBVideoCamera.h>
 #import <CambrianAR/CBAugmentedView.h>
 #import <CambrianAR/CBAugmentedAsset.h>
 #import <CambrianAR/CBColorFinderView.h>

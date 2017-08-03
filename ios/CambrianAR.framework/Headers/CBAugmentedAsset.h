@@ -12,6 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface CBAugmentedAsset : NSObject
 
 @property (readonly, nonatomic) CBAssetType assetType;

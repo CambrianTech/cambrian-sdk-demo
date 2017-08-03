@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) historyChanged:(CBUndoChange)change assetID:(NSString *)assetID userData:(NSDictionary<NSString*, NSString*> *)userData forward:(BOOL)forward;
 @end
 
+__attribute__((visibility("default")))
 @interface CBRemodelingView : CBAugmentedView
 
 @property (weak, nonatomic, nullable) id<CBRemodelingViewDelegate> delegate;

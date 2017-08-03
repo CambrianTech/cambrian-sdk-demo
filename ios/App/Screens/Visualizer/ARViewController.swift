@@ -289,7 +289,7 @@ class ARViewController: UIViewController, WheelDelegate, ToolDelegate, AssetDele
     func assetUpdated(_ asset: Asset) {
         self.selectedItem = asset.item
         if let item = asset.item {
-            if let paint = self.augmentedView.scene.selectedPaint {
+            if let paint = self.augmentedView.scene.selectedAsset as? CBRemodelingPaint {
                 paint.color = item.color
                 paint.setUserData("ID", value: item.itemID)
             }
@@ -319,9 +319,7 @@ class ARViewController: UIViewController, WheelDelegate, ToolDelegate, AssetDele
         project.appendImage(image: image)
         let path = image.directoryPath!.path
         image.markModified()
-        self.augmentedView.scene.save(toDirectory: path, compressed: false)
-        
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+        self.augmentedView.scene.save(toDirectory: path, compressed: false) { _ in
             self.performSegue(withIdentifier: "showDetails", sender: self)
             self.augmentedView.stopRunning()
             hideProgress()

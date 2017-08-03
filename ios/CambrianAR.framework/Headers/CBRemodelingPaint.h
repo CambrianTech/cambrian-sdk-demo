@@ -12,10 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface CBRemodelingPaint : CBAugmentedAsset
 
-@property (nonatomic, assign) CBPaintSheen sheen;
 @property (nonatomic, strong, nonnull) UIColor* color;
+@property (nonatomic, assign) CBTransparency transparency;
+@property (nonatomic, assign) CBPaintSheen sheen;
 
 @end
 

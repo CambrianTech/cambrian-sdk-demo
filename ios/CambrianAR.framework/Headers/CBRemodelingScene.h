@@ -14,10 +14,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface CBRemodelingScene : CBAugmentedScene
-
-@property (strong, nonatomic, nullable) CBRemodelingPaint *selectedPaint;
-@property (strong, nonatomic, nullable) CBRemodelingFloor *selectedFloor;
 
 @property (readonly, nonatomic) BOOL isMasked;
 

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKIt/UIKit.h>
 
+__attribute__((visibility("default")))
 @interface CBLicensing : NSObject
     + (void)enableWithKey:(NSString *)apiKey;
     + (BOOL)isEnabled;

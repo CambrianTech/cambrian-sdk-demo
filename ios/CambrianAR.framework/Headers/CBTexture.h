@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
 
+__attribute__((visibility("default")))
 @interface CBMaterial : NSObject
     @property (nonatomic, assign) GLKVector3 AmbientColor;
     @property (nonatomic, assign) GLKVector3 DiffuseColor;
@@ -17,6 +18,7 @@
 
 @end
 
+__attribute__((visibility("default")))
 @interface CBTexture : NSObject
     @property (nonatomic, strong) NSString* path;
     @property (nonatomic, assign) float scale;

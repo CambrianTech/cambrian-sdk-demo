@@ -215,15 +215,6 @@ class VisualizerProject : Object  {
         }
     }
     
-    func saveCurrentScene(scene:CBRemodelingScene) -> String? {
-        self.appendScene(scene)
-        if let path = currentImage?.directoryPath?.path {
-            return scene.save(toDirectory: path, compressed: false)
-        } else {
-            return nil
-        }
-    }
-    
     dynamic var directoryPath:URL {
         get {
             return DataController.getWriteDirectory().appendingPathComponent("projects").appendingPathComponent(projectID)

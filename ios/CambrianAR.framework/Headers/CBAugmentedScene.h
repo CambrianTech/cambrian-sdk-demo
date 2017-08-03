@@ -13,6 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+__attribute__((visibility("default")))
 @interface CBAugmentedScene : NSObject
 
 @property (readonly, nonatomic, nonnull) NSString *sceneID;
@@ -38,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSDictionary<NSString *, CBAugmentedAsset *>*)getAssets:(CBAssetType)type;
 
-- (NSString *) saveToDirectory:(nonnull NSString *)path compressed:(BOOL)compress;
+- (void) saveToDirectory:(nonnull NSString *)path compressed:(BOOL)compress completion:(void (^)(NSString* finalPath))completion;
 
 - (BOOL) appendAsset:(nonnull CBAugmentedAsset *)asset;
 
